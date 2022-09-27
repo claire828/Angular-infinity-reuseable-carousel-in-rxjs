@@ -1,0 +1,10 @@
+
+
+div[class]:first-child {
+    border-top: none;
+    border-bottom: none;
+}
+
+div+div{
+    border-bottom: none;
+}

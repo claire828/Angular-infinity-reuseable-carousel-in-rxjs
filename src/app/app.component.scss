@@ -1,0 +1,26 @@
+
+.float-menu-switch{
+    @apply fixed z-50 flex items-center justify-center w-8 h-8 p-1 text-3xl transition-colors duration-300 rounded cursor-pointer lg:hidden right-2 top-4 ;
+}
+
+.float-menu-panel-s{
+    @apply fixed top-0 left-0 z-40 flex flex-col items-center justify-start w-screen h-screen space-y-20 text-4xl border-r p-36 text-me-black-300 border-me-black-400 bg-me-brown-100  ;
+}
+
+.fixed-menu-panel-l{
+    @apply fixed left-0 z-10 flex-col hidden h-screen px-5 py-8 space-y-8 border-r lg:flex text-me-black-400 border-me-black-400 bg-me-brown-100 dark:text-me-light-100 dark:border-me-light-100 dark:bg-me-black-400;
+}
+
+
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

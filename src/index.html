@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <!-- <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>-->
+  <title>Claire Cheng</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="MobileContainer-SaveArea-Supported" content="true">
+  <meta name="MobileContainer-Cutout-Supported" content="false">
+  <meta name="MobileContainer-Splash-Control" content="true">
+  <meta name="MobileContainer-GesturesBackForward" content="true">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#b4a890">
+  <style>
+    body{
+      margin: 0;
+    }
+    #loading-bg {
+      width: 100%;
+      height: 100vh;
+      background: -webkit-radial-gradient(ellipse,white, #DDD);
+      background: -o-radial-gradient(ellipse,white, #DDD);
+      background: -moz-radial-gradient(ellipse,white, #DDD);
+      background: radial-gradient(ellipse,white, #DDD);
+    }
+    #loading-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    #loading-icon .loading-text {
+      font-size: 32px;
+      color: #333;
+      font-weight: bold;
+    }
+    .lds-facebook {
+      display: inline-block;
+      position: relative;
+      width: 80px;
+      height: 70px;
+    }
+    .lds-facebook div {
+      display: inline-block;
+      position: absolute;
+      left: 8px;
+      width: 16px;
+      background: currentColor;
+      animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+      height: 64px
+    }
+    .lds-facebook div:nth-child(1) {
+      color: #cbcbcb;
+      left: 8px;
+      animation-delay: -0.24s;
+    }
+    .lds-facebook div:nth-child(2) {
+      color: #cbcbcb;
+      opacity: .75;
+      left: 32px;
+      animation-delay: -0.12s;
+    }
+    .lds-facebook div:nth-child(3) {
+      color: #cbcbcb;
+      opacity: .5;
+      left: 56px;
+      animation-delay: 0;
+    }
+    @keyframes lds-facebook {
+      0% {
+        transform: scaleY(1.2);
+      }
+      50%, 100% {
+        transform: scaleY(.5);
+      }
+    }
+    #gg-root {
+      height: 0;
+    }
+  </style>
+  <!-- PWA -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Claire-PWA">
+  <link rel="apple-touch-icon" sizes="96x96" href="assets/icons/icon-96x96.png">
+  <link rel="apple-touch-icon" href="assets/icons/icon-152x152.png">
+
+</head>
+<body oncontextmenu="return false">
+  <app-root>
+    <div id="loading-bg">
+      <div id="loading-icon">
+        <div class="lds-facebook">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="loading-text">载入中...</div>
+      </div>
+    </div>
+  </app-root>
+</body>
+</html>

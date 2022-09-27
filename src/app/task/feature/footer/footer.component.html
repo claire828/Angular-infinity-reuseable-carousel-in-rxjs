@@ -1,0 +1,13 @@
+<div class="flex items-center justify-between w-full h-10 px-2 text-sm bg-white border border-gray-300" >
+    <div class="w-1/12" >
+        <!-- 故意用container搭配async pipe ＋ as 取得observable, 用匿名取得最終的length
+            因為(list$ | async)?.length 這樣不允許 
+        -->
+        <ng-container *ngIf="this.task$ | async as tasks">
+            Total: {{ tasks.length }} 
+        </ng-container>
+    </div>
+    <div class="flex items-center justify-end w-5/12 p-2 space-x-1 text-red-300 hover:text-red-500">
+        <button (click)="deleteAll()"> Clear Complete </button>
+    </div>
+</div>

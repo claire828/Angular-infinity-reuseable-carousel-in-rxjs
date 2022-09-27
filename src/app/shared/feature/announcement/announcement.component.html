@@ -1,0 +1,7 @@
+<div class="relative h-20 overflow-y-hidden">
+    <app-announcement-item #cmp
+     *ngFor="let i of range;" 
+     class="absolute left-0 bg-red-300"
+     style="top:{{i*this.moveY}}px">
+    </app-announcement-item>
+</div>

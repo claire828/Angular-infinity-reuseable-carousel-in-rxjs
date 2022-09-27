@@ -1,0 +1,13 @@
+
+<div [@fade] class="transition-all duration-500 transform ">
+    <img class="object-cover transition-all duration-500 transform shadow-md cursor-pointer min-w-[4rem]  min-h-[4rem] md:min-w-[20rem]   max-h-[36rem] md:max-h-[46rem] md:m-auto rounded-t-2xl " [src]="currentImgPath" (appDebounceClick)="setPageInx(1)" />
+</div>
+<div *ngIf="totalAmount>1" class="flex justify-center p-3 text-center text-me-brown-200 bg-me-black-400/90 " > Click photo for more </div>
+
+<!--[@fadeScale]="animationStateOut"
+ <app-next-btn class="fixed top-1/2 left-10" (appDebounceClick)="setPageInx(-1)" >pre</app-next-btn>
+
+<app-next-btn  class="fixed top-1/2 right-10" (appDebounceClick)="setPageInx(1)" >next</app-next-btn>
+-->
+
+
