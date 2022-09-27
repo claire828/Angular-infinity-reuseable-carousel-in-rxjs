@@ -5,7 +5,7 @@ import { Subject, BehaviorSubject } from 'rxjs';
   selector: 'app-announcement-item',
   templateUrl: './announcement-item.component.html',
   styleUrls: ['./announcement-item.component.scss'],
-  changeDetection: ChangeDetectionStrategy.Default
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AnnouncementItemComponent implements OnInit {
   @ViewChild('elem') elem:ElementRef<HTMLHtmlElement>;
@@ -19,9 +19,7 @@ export class AnnouncementItemComponent implements OnInit {
 
   public mark:boolean = false;
 
-  constructor(public ref: ElementRef<HTMLHtmlElement>, public cdr:ChangeDetectorRef) { 
-    //內部高度都是0
-    //console.log(`ref:${this.ref.nativeElement.getBoundingClientRect().y}`)
+  constructor(public ref: ElementRef<HTMLHtmlElement>) { 
   }
 
   ngOnInit(): void {

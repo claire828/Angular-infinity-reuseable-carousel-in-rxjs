@@ -5,16 +5,8 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import '@angular/cdk/overlay-prebuilt.css';
 @import 'animate.css';
 @import url('assets/fonts/raleway.css');
-/* 
-@font-face {
-    font-family: 'DS-DIGI';
-    src: url('assets/fonts/DS-DIGI.ttf');
-    font-style: normal;
-  }
-*/
 
 
 
@@ -47,13 +39,6 @@ body.dark{
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-// Overlay panel styling
-
-.overlay-panel {
-
-}
-
-
 
 
 button {
@@ -84,32 +69,3 @@ button {
   :root {
     scrollbar-color: #888 transparent;
   }
-
-  /*
-  .btn {
-    background-color: theme('colors.blue.500');
-    padding: theme('spacing.2') theme('spacing.4');
-  }
-  */
-/*
-
-.scrollbar::-webkit-scrollbar {
-  width: 20px;
-  height: 20px;
-}
-
-.scrollbar::-webkit-scrollbar-track {
-  border-radius: 100vh;
-  background: #f7f4ed;
-}
-
-.scrollbar::-webkit-scrollbar-thumb {
-  background: #e0cbcb;
-  border-radius: 100vh;
-  border: 3px solid #f6f7ed;
-}
-
-.scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #c0a0b9;
-}
-*/

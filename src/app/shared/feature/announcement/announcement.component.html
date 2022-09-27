@@ -1,7 +1,7 @@
-<div class="relative h-20 overflow-y-hidden">
+<div class="relative overflow-y-hidden" style="height:{{scrollContentH}}{{unit}}" >
     <app-announcement-item #cmp
      *ngFor="let i of range;" 
-     class="absolute left-0 bg-red-300"
-     style="top:{{i*this.moveY}}px">
+     class="absolute left-0 bg-red-300 w-full"
+     style="top:{{i*this.moveY}}{{unit}}">
     </app-announcement-item>
 </div>
